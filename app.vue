@@ -26,17 +26,37 @@ const menuItems = [
   //   link: "/contact",
   // },
 ];
+const toggleMenu = ref(false);
 </script>
 
 <template>
   <div class="bg-slate-400 p-2">
-    <div class="rounded-3xl overflow-hidden bg-slate-300">
+    <div class="rounded-3xl min-h-full overflow-hidden bg-slate-300">
+      <transition name="slide">
+        <div
+          v-if="toggleMenu"
+          class="bg-red-300 fixed z-30 left-0 top-2 rounded-r-3xl w-[75vw] h-[calc(100vh-16px)] px-4 py-8"
+        >
+          <nav>
+            <ul class="flex flex-col gap-3">
+              <li v-for="menu of menuItems">
+                <NuxtLink
+                  @click="toggleMenu = false"
+                  class="block py-4 px-4 text-white rounded md:bg-transparent md:text-slate-600 md:p-0 dark:text-white text-2xl"
+                  :to="menu.link"
+                  >{{ menu.name }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </transition>
       <header class="bg-slate-200 h-auto relative">
         <nav
           class="bg-white relative border-gray-200 dark:bg-gray-900 !bg-transparent w-full z-20"
         >
           <div
-            class="max-w-7xl flex flex-wrap items-center justify-between mx-auto max-w-7xl mx-auto px-8 py-8 lg:py-12 py-8"
+            class="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-8 py-8 lg:py-12"
           >
             <a href="https://flowbite.com/" class="flex items-center">
               <img
@@ -55,6 +75,7 @@ const menuItems = [
               class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-default"
               aria-expanded="false"
+              @click="toggleMenu = !toggleMenu"
             >
               <span class="sr-only">Open main menu</span>
               <svg
@@ -79,7 +100,7 @@ const menuItems = [
               >
                 <li v-for="menu of menuItems">
                   <NuxtLink
-                    class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                    class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-slate-600 md:p-0 dark:text-white"
                     :to="menu.link"
                     >{{ menu.name }}
                   </NuxtLink>

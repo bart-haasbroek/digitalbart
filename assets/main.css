@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  height: 100vh;
+}
+
+div#__nuxt {
+  min-height: 100%;
+}
+
+.router-link-active {
+  background: #1d1d1d;
+  border-radius: 8px;
+}
+
+/* .slide-leave-active,
+.slide-enter-active {
+  transition: 30.5s;
+}
+.slide-enter {
+  transform: translate(100%, 0);
+}
+.slide-leave-to {
+  transform: translate(-100%, 0);
+}
+.slide-enter-to {
+  transform: translate(0, 0);
+} */
