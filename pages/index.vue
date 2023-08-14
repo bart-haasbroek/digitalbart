@@ -1,0 +1,62 @@
+<script lang="ts" setup>
+const images = [
+  {
+    id: 1,
+    src: "/images/Untitled_Artwork.jpg",
+  },
+  {
+    id: 2,
+    src: "/images/Untitled_Artwork_2.jpg",
+  },
+  {
+    id: 3,
+    src: "/images/Untitled_Artwork_3.jpg",
+  },
+  {
+    id: 4,
+    src: "/images/Untitled_Artwork_4.jpg",
+  },
+  {
+    id: 5,
+    src: "/images/Untitled_Artwork_5.jpg",
+  },
+  {
+    id: 6,
+    src: "/images/Untitled_Artwork_6.jpg",
+  },
+  {
+    id: 7,
+    src: "/images/Untitled_Artwork_7.jpg",
+  },
+  {
+    id: 8,
+    src: "/images/Untitled_Artwork_8.jpg",
+  },
+  {
+    id: 9,
+    src: "/images/Untitled_Artwork_9.jpg",
+  },
+  {
+    id: 10,
+    src: "/images/Untitled_Artwork_10.jpg",
+  },
+];
+</script>
+
+<template>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-5 lg:py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
+      <div
+        v-for="image of images"
+        class="aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
+      >
+        <img :src="image.src" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="bg-slate-800">
+    <div class="max-w-7xl mx-auto px-8 py-12">
+      <div class="text-center text-slate-400">Copyright © 2023 Digitabart.</div>
+    </div>
+  </div>
+</template>
