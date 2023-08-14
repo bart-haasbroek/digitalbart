@@ -20,24 +20,18 @@ const menuItems = [
     name: "About",
     link: "/about",
   },
-  {
-    id: 5,
-    name: "Contact",
-    link: "/contact",
-  },
+  // {
+  //   id: 5,
+  //   name: "Contact",
+  //   link: "/contact",
+  // },
 ];
 </script>
 
 <template>
   <div class="bg-slate-400 p-2">
     <div class="rounded-3xl overflow-hidden bg-slate-300">
-      <!-- rounded-b-[3rem] -->
       <header class="bg-slate-200 h-auto relative">
-        <img
-          class="object-fill absolute hidden w-full h-full"
-          src="https://images.squarespace-cdn.com/content/v1/5be7d24e31d4dfaead911154/1541921272746-1DD74HV5XEAPTI79ZBUS/NiceCostumes.jpg"
-          alt=""
-        />
         <nav
           class="bg-white relative border-gray-200 dark:bg-gray-900 !bg-transparent w-full z-20"
         >
