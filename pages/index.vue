@@ -54,9 +54,4 @@ const images = [
       </div>
     </div>
   </div>
-  <div class="bg-slate-800">
-    <div class="max-w-7xl mx-auto px-8 py-12">
-      <div class="text-center text-slate-400">Copyright © 2023 Digitabart.</div>
-    </div>
-  </div>
 </template>
