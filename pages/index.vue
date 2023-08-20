@@ -40,7 +40,35 @@ const images = [
     id: 10,
     src: "/images/Untitled_Artwork_10.jpg",
   },
-];
+  {
+    id: 11,
+    src: "/images/Untitled_Artwork 11.jpg",
+  },
+  {
+    id: 12,
+    src: "/images/Untitled_Artwork 12.jpg",
+  },
+  {
+    id: 13,
+    src: "/images/Untitled_Artwork 13.jpg",
+  },
+  {
+    id: 14,
+    src: "/images/Untitled_Artwork 14.jpg",
+  },
+  {
+    id: 15,
+    src: "/images/Untitled_Artwork 15.jpg",
+  },
+  {
+    id: 16,
+    src: "/images/Untitled_Artwork 16.jpg",
+  },
+  {
+    id: 17,
+    src: "/images/Untitled_Artwork 17.jpg",
+  },
+].reverse();
 </script>
 
 <template>
