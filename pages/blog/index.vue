@@ -1,11 +1,6 @@
-<script setup lang="ts">
-const { data } = await useAsyncData("home", () =>
-  queryContent("/blog").findOne()
-);
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  {{ data }}
   <div class="max-w-7xl mx-auto px-8 pb-5">
     <div
       class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
