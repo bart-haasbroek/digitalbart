@@ -63,7 +63,7 @@ const toggleMenu = ref(false);
           class="absolute w-[calc(100vw+50px)] -left-2 h-8 bg-slate-400 -top-8 pointer-events-none"
         ></div>
         <div
-          class="gradient absolute w-[calc(100%-50px)] pointer-events-none h-5 -bottom-5"
+          class="gradient absolute w-full pointer-events-none h-5 -bottom-5"
         ></div>
         <nav
           class="relative border-gray-200 dark:bg-gray-900 !bg-transparent w-full z-20"
@@ -72,16 +72,12 @@ const toggleMenu = ref(false);
             class="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-8 py-8 lg:py-12"
           >
             <a href="/" class="flex items-center">
-              <img
-                src="/images/logo.png"
-                class="h-8 mr-3"
-                alt="Flowbite Logo"
-              />
+              <img src="/images/logo.svg" class="h-8 mr-3" />
             </a>
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-default"
               aria-expanded="false"
               @click="toggleMenu = !toggleMenu"
