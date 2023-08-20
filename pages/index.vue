@@ -44,7 +44,7 @@ const images = [
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-5 lg:py-12">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 pb-5 lg:pb-12">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
       <div
         v-for="image of images"
