@@ -52,7 +52,7 @@ const toggleMenu = ref(false);
               <li v-for="menu of menuItems">
                 <NuxtLink
                   @click="toggleMenu = false"
-                  class="block py-4 px-4 text-white rounded md:bg-transparent md:text-slate-600 md:p-0 dark:text-white text-2xl font-baloo"
+                  class="block py-4 px-4 !text-white rounded md:bg-transparent md:text-slate-600 md:p-0 dark:text-white text-2xl font-baloo"
                   :to="menu.link"
                   >{{ menu.name }}
                 </NuxtLink>
@@ -82,7 +82,7 @@ const toggleMenu = ref(false);
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              class="hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-default"
               aria-expanded="false"
               @click="toggleMenu = !toggleMenu"
