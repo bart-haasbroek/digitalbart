@@ -61,15 +61,15 @@ const categories = [
         </button>
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-center my-8">
       <div
-        class="bg-white rounded-2xl aspect-square flex items-center justify-center text-3xl p-8 h-60 text-center"
+        class="bg-white rounded-2xl aspect-square flex items-center justify-center text-3xl p-8 h-72 text-center"
       >
         {{ word }}
       </div>
     </div>
     <div class="text-center">
-      <button @click="nextWord" class="bg-dark text-white rounded-md p-4 mt-4">
+      <button @click="nextWord" class="bg-dark text-white rounded-md p-4">
         Volgend woord
       </button>
     </div>
