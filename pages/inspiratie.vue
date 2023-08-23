@@ -40,6 +40,14 @@ const categories = [
     name: "clothing",
     label: "Kleding",
   },
+  {
+    name: "jobs",
+    label: "Beroepen",
+  },
+  {
+    name: "objects",
+    label: "Voorwerpen",
+  },
 ];
 </script>
 

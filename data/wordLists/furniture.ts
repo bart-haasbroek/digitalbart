@@ -1,4 +1,4 @@
-export const furnitureList = [
+export const furniture = [
   "Bank",
   "Tafel",
   "Stoel",
