@@ -10,6 +10,11 @@ const menuItems = [
   //   name: "Blog",
   //   link: "/blog",
   // },
+  {
+    id: 21,
+    name: "Inspiratie",
+    link: "/inspiratie",
+  },
   // {
   //   id: 2,
   //   name: "Sketchbook",
@@ -130,3 +135,9 @@ const toggleMenu = ref(false);
     </div>
   </div>
 </template>
+
+<style>
+.router-link-exact-active {
+  color: #1e293b;
+}
+</style>

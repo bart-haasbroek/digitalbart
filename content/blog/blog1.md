@@ -1,5 +1,5 @@
 ---
-title: Blog1
+title: Blog2
 description: A timeless programmer introduction to new concepts
 summary: An introductory blog post
 author:
@@ -8,6 +8,10 @@ featureImage:
   url: https://source.unsplash.com/random/480x360
   title: hello world
 publishDate: 04 March 2023
+categories: broody
+categories2:
+  - brood
+  - hagelslag
 ---
 
 This is a classic programmers introduction to new concepts.

@@ -1,21 +1,17 @@
 ---
-title: Hello World!
+title: Blogyyy
 description: A timeless programmer introduction to new concepts
 summary: An introductory blog post
 author:
-  name: Gary Woodfine
-  github: garywoodfine
-  imageUrl: /images/garywoodfine.png
+  name: Bart Haasbroek
 featureImage:
-  url: /images/hello-world.jpg
+  url: https://source.unsplash.com/random/480x360
   title: hello world
 publishDate: 04 March 2023
-publishDateTime: 2023-03-04:17:30
 categories: broody
 categories2:
+  - dssdds
   - brood
-  - deeg
-  - groot
 ---
 
 This is a classic programmers introduction to new concepts.
