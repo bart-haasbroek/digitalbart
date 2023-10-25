@@ -1,5 +1,5 @@
 ---
-title: Blog2
+title: Blog2 mooi
 description: A timeless programmer introduction to new concepts
 summary: An introductory blog post
 author:

@@ -5,11 +5,16 @@ const menuItems = [
     name: "Illustration",
     link: "/",
   },
-  // {
-  //   id: 2,
-  //   name: "Blog",
-  //   link: "/blog",
-  // },
+  {
+    id: 2,
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    id: 12,
+    name: "Kennisbank",
+    link: "/kennisbank",
+  },
   {
     id: 21,
     name: "Inspiratie",

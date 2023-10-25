@@ -1,16 +1,11 @@
-<script setup lang="ts">
-  useSeoMeta({
-    title: 'My Amazing Site123',
-    description: 'This is my amazing site, let me tell you all about it.',
-  })
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="max-w-7xl mx-auto px-8 pb-5">
     <div
       class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
     >
-      <ContentList path="/blog" v-slot="{ list }">
+      <ContentList path="/kennisbank" v-slot="{ list }">
         <div
           v-for="article in list"
           :key="article._path"

@@ -20,6 +20,9 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "pinia": "^2.1.6"
+    "lightgallery": "^2.7.1",
+    "lightgallery.js": "^1.4.0",
+    "pinia": "^2.1.6",
+    "vue-light-gallery": "^1.0.1"
   }
 }

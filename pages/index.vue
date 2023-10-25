@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { onMounted } from "vue";
 const images = [
   {
     id: 1,
@@ -69,17 +70,28 @@ const images = [
     src: "/images/Untitled_Artwork 17.jpg",
   },
 ].reverse();
+
+import Lightgallery from "lightgallery/vue/LightGalleryVue.umd.js";
+
+const index: any = ref(null);
 </script>
 
 <template>
   <div class="max-w-7xl mx-auto px-5 lg:px-8 pb-5 lg:pb-12">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
-      <div
+      <Lightgallery class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
+        <a
+          v-for="image of images"
+          :data-src="image.src"
+          class="block aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
+        >
+        <img class="img-responsive" :src="image.src" alt="" />
+        </a>
+      </Lightgallery>
+      <!-- <div
         v-for="image of images"
         class="aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
       >
         <img :src="image.src" alt="" />
-      </div>
-    </div>
+      </div> -->
   </div>
 </template>

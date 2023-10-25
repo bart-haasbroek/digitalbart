@@ -1,14 +1,10 @@
 <script setup>
 const { path } = useRoute();
-const current = await queryContent("blog").where({ _path: path }).findOne();
-
-useSeoMeta({
-    title: 'My Amazing Site123',
-    description: 'This is my amazing site, let me tell you all about it.',
-})
+console.log("path", path);
+const current = await queryContent("kennisbank").where({ _path: path }).findOne();
 
 const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent("blog")
+  return queryContent("kennisbank")
     .where({
       _path: { $ne: path },
       categories2: { $in: current.categories2 },
