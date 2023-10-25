@@ -20,11 +20,12 @@
             :to="article._path"
             class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900"
           >
-            <img
+            <NuxtImg class="object-cover w-full h-44 bg-gray-500" :src="article.featureImage.url" />
+            <!-- <img
               role="presentation"
               class="object-cover w-full h-44 bg-gray-500"
               :src="article.featureImage.url"
-            />
+            /> -->
             <div class="p-6 space-y-2">
               <h3
                 class="text-2xl font-semibold group-hover:underline group-focus:underline"

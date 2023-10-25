@@ -7,7 +7,7 @@ author:
   github: garywoodfine
   imageUrl: /images/garywoodfine.png
 featureImage:
-  url: /images/hello-world.jpg
+  url: https://source.unsplash.com/random/480x360
   title: hello world
 publishDate: 04 March 2023
 publishDateTime: 2023-03-04:17:30

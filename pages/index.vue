@@ -43,31 +43,31 @@ const images = [
   },
   {
     id: 11,
-    src: "/images/Untitled_Artwork 11.jpg",
+    src: "/images/Untitled_Artwork_11.jpg",
   },
   {
     id: 12,
-    src: "/images/Untitled_Artwork 12.jpg",
+    src: "/images/Untitled_Artwork_12.jpg",
   },
   {
     id: 13,
-    src: "/images/Untitled_Artwork 13.jpg",
+    src: "/images/Untitled_Artwork_13.jpg",
   },
   {
     id: 14,
-    src: "/images/Untitled_Artwork 14.jpg",
+    src: "/images/Untitled_Artwork_14.jpg",
   },
   {
     id: 15,
-    src: "/images/Untitled_Artwork 15.jpg",
+    src: "/images/Untitled_Artwork_15.jpg",
   },
   {
     id: 16,
-    src: "/images/Untitled_Artwork 16.jpg",
+    src: "/images/Untitled_Artwork_16.jpg",
   },
   {
     id: 17,
-    src: "/images/Untitled_Artwork 17.jpg",
+    src: "/images/Untitled_Artwork_17.jpg",
   },
 ].reverse();
 
@@ -84,7 +84,7 @@ const index: any = ref(null);
           :data-src="image.src"
           class="block aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
         >
-        <img class="img-responsive" :src="image.src" alt="" />
+          <NuxtImg class="img-responsive" :src="image.src" />
         </a>
       </Lightgallery>
       <!-- <div

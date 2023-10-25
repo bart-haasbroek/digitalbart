@@ -1,11 +1,11 @@
 ---
-title: Blog2 mooi
+title: Blog mooi
 description: A timeless programmer introduction to new concepts
 summary: An introductory blog post
 author:
   name: Bart Haasbroek
 featureImage:
-  url: https://source.unsplash.com/random/480x360
+  url: /images/Untitled_Artwork_17.jpg
   title: hello world
 publishDate: 04 March 2023
 categories: broody
