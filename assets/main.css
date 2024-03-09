@@ -5,10 +5,11 @@
 
 body {
   height: 100vh;
+  overflow: hidden;
 }
 
 div#__nuxt {
-  min-height: 100%;
+  overflow: hidden;
 }
 
 .router-link-active {
