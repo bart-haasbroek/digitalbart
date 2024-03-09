@@ -138,7 +138,13 @@ const index: any = ref(null);
         :data-src="image.src"
         class="block aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
       >
-        <NuxtImg class="img-responsive" :src="image.src" />
+        <NuxtImg
+          class="img-responsive"
+          quality="30"
+          width="600"
+          height="600"
+          :src="image.src"
+        />
       </a>
     </Lightgallery>
   </div>
