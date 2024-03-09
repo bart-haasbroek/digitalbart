@@ -77,21 +77,49 @@ const index: any = ref(null);
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-5 lg:px-8 pb-5 lg:pb-12">
-      <Lightgallery class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
-        <a
-          v-for="image of images"
-          :data-src="image.src"
-          class="block aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
-        >
-          <NuxtImg class="img-responsive" :src="image.src" />
-        </a>
-      </Lightgallery>
-      <!-- <div
+  <div>
+    <!-- <Lightgallery class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
+      <div
         v-for="image of images"
-        class="aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
+        :data-src="image.src"
+        class="aspect-square bg-transparent cursor-pointer group perspective"
       >
-        <img :src="image.src" alt="" />
-      </div> -->
+        <div
+          class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
+        >
+          <div
+            class="absolute backface-hidden w-full h-full rounded-xl overflow-hidden"
+          >
+            <NuxtImg class="img-responsive" :src="image.src" />
+          </div>
+          <div
+            class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden rounded-xl"
+          >
+            <div
+              class="text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24"
+            >
+              <h1 class="text-3xl font-semibold">The King's Man</h1>
+              <p class="my-2">9.0 Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                itaque assumenda saepe animi maxime libero non quasi, odit natus
+                veritatis enim culpa nam inventore doloribus quidem temporibus
+                amet velit accusamus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Lightgallery> -->
+
+    <Lightgallery class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
+      <a
+        v-for="image of images"
+        :data-src="image.src"
+        class="block aspect-square bg-blue-200 border border-slate-200 rounded-xl overflow-hidden"
+      >
+        <NuxtImg class="img-responsive" :src="image.src" />
+      </a>
+    </Lightgallery>
   </div>
 </template>

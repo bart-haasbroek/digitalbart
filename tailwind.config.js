@@ -1,4 +1,23 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
+
+const Myclass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".my-rotate-y-180": {
+      transform: "rotateY(180deg)",
+    },
+    ".preserve-3d": {
+      transformStyle: "preserve-3d",
+    },
+    ".perspective": {
+      perspective: "1000px",
+    },
+    ".backface-hidden": {
+      backfaceVisibility: "hidden",
+    },
+  });
+});
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -11,12 +30,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'baloo': ['"Baloo Tamma 2"', 'cursive'],
+        baloo: ['"Baloo Tamma 2"', "cursive"],
       },
       colors: {
         primary: {
           // DEFAULT: colors.slate[200],
-          DEFAULT: '#A8D0E6',
+          DEFAULT: "#A8D0E6",
           light: "#4c8dff",
           dark: "#3171e0",
         },
@@ -26,32 +45,32 @@ module.exports = {
           light: "#50c8ff",
         },
         tertiary: {
-          DEFAULT: '#06b6d4',
+          DEFAULT: "#06b6d4",
           dark: "#ff5e3a",
           light: "#ff5e3a",
         },
         success: {
-          DEFAULT: '#2dd36f',
+          DEFAULT: "#2dd36f",
           dark: "#28ba62",
           light: "#42d77d",
         },
         warning: {
-          DEFAULT: '#ffc409',
+          DEFAULT: "#ffc409",
           dark: "#e0ac08",
           light: "#ffca22",
         },
         danger: {
-          DEFAULT: '#eb445a',
+          DEFAULT: "#eb445a",
           dark: "#cf3c4f",
           light: "#ed576b",
         },
         light: {
-          DEFAULT: '#f4f5f8',
+          DEFAULT: "#f4f5f8",
           dark: "#d7d8da",
           light: "#f5f6f9",
         },
         medium: {
-          DEFAULT: '#92949c',
+          DEFAULT: "#92949c",
           dark: "#808289",
           light: "#9d9fa6",
         },
@@ -60,11 +79,8 @@ module.exports = {
           dark: "#1e2023",
           light: "#383a3e",
         },
-      }
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
-
+  plugins: [require("@tailwindcss/typography"), Myclass],
+};
