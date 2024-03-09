@@ -69,6 +69,26 @@ const images = [
     id: 17,
     src: "/images/Untitled_Artwork_17.jpg",
   },
+  {
+    id: 18,
+    src: "/images/Untitled_Artwork_18.png",
+  },
+  {
+    id: 19,
+    src: "/images/Untitled_Artwork_19.png",
+  },
+  {
+    id: 20,
+    src: "/images/Untitled_Artwork_20.png",
+  },
+  {
+    id: 21,
+    src: "/images/Untitled_Artwork_21.png",
+  },
+  {
+    id: 22,
+    src: "/images/Untitled_Artwork_22.png",
+  },
 ].reverse();
 
 import Lightgallery from "lightgallery/vue/LightGalleryVue.umd.js";
