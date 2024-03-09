@@ -45,7 +45,7 @@ const toggleMenu = ref(false);
 </script>
 
 <template>
-  <div class="bg-slate-50 h-screen p-2">
+  <div class="bg-slate-50 h-[100svh] p-2">
     <div
       class="bg-primary h-full overflow-hidden rounded-xl relative grid grid-rows-[auto,1fr]"
     >
