@@ -70,7 +70,7 @@ const toggleMenu = ref(false);
       </transition>
 
       <header class="rounded-t-xl py-8 px-8 sticky top-0">
-        <div class="flex max-md:justify-between">
+        <div class="flex max-md:justify-between max-w-7xl mx-auto px-8 w-full">
           <a href="/" class="flex items-center">
             <img src="/images/logo.svg" class="h-8 mr-3" />
           </a>
@@ -78,7 +78,7 @@ const toggleMenu = ref(false);
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex !hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
             @click="toggleMenu = !toggleMenu"
@@ -104,7 +104,7 @@ const toggleMenu = ref(false);
           <nav class="flex grow justify-end max-lg:hidden">
             <ul
               id="main-menu"
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700"
+              class="!hidden font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700"
             >
               <li v-for="menu of menuItems">
                 <NuxtLink
@@ -119,7 +119,7 @@ const toggleMenu = ref(false);
       </header>
 
       <div
-        class="overflow-y-scroll bg-primary pt-8 w-[calc(100%+15px)] grid grid-rows-[1fr_auto]"
+        class="overflow-y-scroll bg-primary w-[calc(100%+15px)] grid grid-rows-[1fr_auto]"
       >
         <div class="max-w-7xl mx-auto px-8 pb-5 w-full">
           <NuxtPage />

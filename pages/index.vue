@@ -132,7 +132,9 @@ const index: any = ref(null);
       </div>
     </Lightgallery> -->
 
-    <Lightgallery class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
+    <Lightgallery
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6"
+    >
       <a
         v-for="image of images"
         :data-src="image.src"
